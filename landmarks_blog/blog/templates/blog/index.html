@@ -1,0 +1,42 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+Landmarks Blog 
+{% endblock %} 
+
+{% block css_files %}
+ <link rel="stylesheet" href="{% static "blog/post.css" %}" />
+ <link rel="stylesheet" href="{% static "blog/index.css" %}" />
+{% endblock %}
+
+{% block content %}
+<section id="welcome">
+  <header>
+    <img src="{% static "blog/images/maryam.jpg" %}" alt="Maryam - The Author Of This Blog" />
+    <h2>MARYAM'S BLOG</h2>
+  </header>
+  <p>Hi, I am Maryam and I love to blog about landmarks around the world!</p>
+</section>
+
+<section id="latest-posts">
+  <h2>My Latest Landmarks</h2>
+
+  <ul>
+    {% for post  in posts %}
+      {% include "blog/includes/post.html" %}
+   {% endfor %}
+  </ul>
+</section>
+
+<section id="about">
+  <h2>What I Do</h2>
+  <p>
+    I love travelling, I love to travel arouond the world and enjoy exploring new
+    sightseengs!
+  </p>
+  <p>
+    Meeting people from other cultures will teach you that the way you’ve been looking at the world isn’t the way everybody else does. In fact, your point-of-view might have some major blind spots. Seeing the world for yourself will improve your vision and your grip on reality.
+  </p>
+</section>
+{% endblock %}
