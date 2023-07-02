@@ -25,7 +25,7 @@ This is a Django Landmarks Blog using Python and SQLite.<br>
 
 To run the project, use the following command:
 
-<pre><code>python manage.py runserver</code></pre>
+<pre><code>python manage.py runserver</code></pre> Then open http://127.0.0.1:8000/
 
 ## Project Background
 
