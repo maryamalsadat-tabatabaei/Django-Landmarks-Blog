@@ -21,8 +21,8 @@ This is a Django-based web application for a personal landmark blog. The blog al
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/maryamalsadat-tabatabaei/django-project.git`
-2. Navigate to the project directory: `cd django-project`
+1. Clone the repository: `git clone https://github.com/maryamalsadat-tabatabaei/Django-Landmarks-Blog.git`
+2. Navigate to the project directory: `cd Django-Landmarks-Blog`
 3. Install dependencies: `pip install django`
 
 ## Usage
