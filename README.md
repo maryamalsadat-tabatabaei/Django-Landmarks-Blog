@@ -1,19 +1,23 @@
-# django-project
+# Django Landmarks Blog
 
-This is a Django Landmarks Blog using Python and SQLite.<br>
+This is a Django-based web application for a personal landmark blog. The blog allows an admin to post landmarks, which can be viewed by users. Users can explore the places, add them to a "Read Later" list, delete places from the list, view detailed information about each place, leave comments, and manage their own Read Later list.<br>
 
 
-<img src="https://github.com/maryamalsadat-tabatabaei/django-project/assets/87692864/0da229ac-c530-4a78-847b-f1b3cbe738de" alt="Home Page" width="300" height="300">
-<img src="https://github.com/maryamalsadat-tabatabaei/django-project/assets/87692864/cd2838a0-ecc6-4854-8992-54ef008bd617" alt="Posts List Page" width="300" height="300">
-<img src="https://github.com/maryamalsadat-tabatabaei/django-project/assets/87692864/23f01afb-bc62-4c1c-8308-735266f81b32" alt="Single Post Page-with commends" width="300" height="300">
-<img src="https://github.com/maryamalsadat-tabatabaei/django-project/assets/87692864/a57cf0ca-e26c-44e0-b06b-f9ca58895259" alt="Single Post Page" width="300" height="300">
-<img src="https://github.com/maryamalsadat-tabatabaei/django-project/assets/87692864/3f0869d5-4c60-4cdd-b866-f5c4463696b7" alt="Stored Posts Page" width="300" height="300">
+<img src="https://github.com/maryamalsadat-tabatabaei/Django-Landmarks-Blog/assets/87692864/bac5ed7e-22f7-429f-9c41-00755dde9885" alt="Stored Posts Page" width="30%" height="auto">
+<img src="https://github.com/maryamalsadat-tabatabaei/Django-Landmarks-Blog/assets/87692864/92972c82-d48b-462c-a1e7-341ae1890543" alt="Single Post Page-with commends" width="30%" height="auto">
+<img src="https://github.com/maryamalsadat-tabatabaei/Django-Landmarks-Blog/assets/87692864/a6c53d58-459e-48a9-a0fa-91180022066d" alt="Single Post Page" width="30%" height="auto">
+<img src="https://github.com/maryamalsadat-tabatabaei/Django-Landmarks-Blog/assets/87692864/1c1d482b-4423-41b0-aaf8-a7aff22338be" alt="Stored Posts Page" width="30%" height="auto">
+<img src="https://github.com/maryamalsadat-tabatabaei/Django-Landmarks-Blog/assets/87692864/0b93c807-2b8d-40fa-8375-2fd10ff9f923" alt="Posts List Page" width="30%" height="auto">
+<img src="https://github.com/maryamalsadat-tabatabaei/Django-Landmarks-Blog/assets/87692864/e3e4187d-3f25-48c2-ae1e-7df550c93005" alt="Home Page" width="30%" height="auto">
+
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Background](#project-background)
+- [Features](#features)
+- [Dependencies](#dependencies)
 
 ## Installation
 
@@ -25,7 +29,33 @@ This is a Django Landmarks Blog using Python and SQLite.<br>
 
 To run the project, use the following command:
 
-<pre><code>python manage.py runserver</code></pre> Then open http://127.0.0.1:8000/
+<pre><code>python manage.py runserver</code></pre> Then Open a web browser and visit http://localhost:8000 to access the blog.
+
+## Features
+
+- Starting Page: The starting page of the blog.
+  - URL: "" (empty string)
+  - View: views.StartingPageView
+  - Name: "starting-page"
+- All Posts: Displays all the landmarks/posts.
+  - URL: "posts"
+  - View: views.AllPostView
+  - Name: "posts"
+- Post Detail Page: Shows detailed information about a specific landmark/post.
+
+  - URL: "posts/<slug:slug>"
+  - View: views.SinglePostView
+  - Name: "post-detail-page"
+- Read Later: Allows users to add landmarks/posts to their Read Later list.
+
+  - URL: "read-later"
+  - View: views.ReadLaterView
+  - Name: "read-later"
+## Dependencies
+The application is built using Python and utilizes SQLite for data management and templates for rendering views. The following dependencies are required to run the Django Landmarks Blog:
+
+- Django
+- SQLite
 
 ## Project Background
 
